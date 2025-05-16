@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+*{
+    font-family: "Press Start 2P:",cursive;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height:100%
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(32deg,#0042f9, #192852);
+}
+
+.ctr {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.tabel {
+    width:480px;
+    height: 480px;
+    background:#78b0d571;
+    border-radius: 100%;
+    border:1px solid #0d152b;
+    box-shadow: -2px 20px 0 -3px #4283c4, -20px 20px #0d152b;
+    flex-direction: column;
+}
+
+.board {
+    width:369px;
+    height:369px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background:#d3e2ea38;
+    border-radius: 20px;
+    border:1px solid #0d152b;
+    box-shadow: -10px 5px 0px -2px #19285254;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:8px;
+    padding:12px
+}
+
+.board > span {
+    background:#76afd6;
+    color:#fff;
+    font-size:4em;
+    border-radius: 100%;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #0d152b65;
+    cursor:pointer;
+    transition:all 0.2s ease;
+    box-shadow: -1.2px 2px 0px 0px #141d4c;
+}
+
+
+
+.board > span:hover {
+    background: #620684bf;
+}
+
+.board > span:active {
+    box-shadow:  -1.2px 7.4px 0px -2.5px #141d4c;
+}
+
+#reset {
+    margin-top: 14px;
+    color:#fff;
+    background: transparent;
+    border: none;
+    font-size: 1.2em;;
+}
+
+.win {
+    background:#55efc4 !important
+}
