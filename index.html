@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tiktack toe</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-    <main class="w-screen h-screen ctr">
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dmSPrF4CC8E?si=6INPkDo1yJuRu00U&amp;start=1502" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div class="tabel ctr">
-            <div class="board">
-                <span id="col-0"></span>
-                <span id="col-1"></span><span id="col-2"></span><span id="col-3"></span><span id="col-4"></span><span
-                    id="col-5"></span><span id="col-6"></span><span id="col-7"></span><span id="col-8"></span>
-            </div>
-            <button id="reset" >Reset</button>
+  <body>
+    <main class="ctr">
+      <div class="tabel ctr">
+        <div class="board">
+          <span id="col-0"></span>
+          <span id="col-1"></span><span id="col-2"></span
+          ><span id="col-3"></span><span id="col-4"></span
+          ><span id="col-5"></span><span id="col-6"></span
+          ><span id="col-7"></span><span id="col-8"></span>
         </div>
+        <button id="reset">Reset</button>
+      </div>
     </main>
-    <script src="./script.js"></script>
-</body>
+    <footer>
+      <header class="header__spt">
+        <div class="spt">
+          <h1 class="spt">My list Spotify</h1>
+        </div>
 
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/04B4KKBQmkrlBigD2MGgaH?utm_source=generator"
+          width="70%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </header>
+      <span>
+        &copy;<span class="year"></span> Created by
+        <a href="https://github.com/ALLOMOH" target="_blank">ALLOMOH</a>
+      </span>
+    </footer>
+    <script>
+      const year = document.querySelector(".year");
+      const date = new Date();
+      year.innerText = date.getFullYear();
+    </script>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
